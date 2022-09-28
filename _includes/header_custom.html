@@ -1,4 +1,4 @@
-<img src="assets/theme_icon_light.png" class="js-toggle-theme" style="height: 3rem; align-self: center; padding: 1rem; box-sizing: border-box;" alt="Change theme">
+<img src="assets/icons/theme_icon_light.png" class="js-toggle-theme" style="height: 3rem; align-self: center; padding: 1rem; box-sizing: border-box;" alt="Change theme">
 
 <script>
     const toggleTheme = document.querySelector('.js-toggle-theme');
@@ -6,7 +6,7 @@
     function setTheme(theme) {
         localStorage.setItem("theme", theme);
         jtd.setTheme(theme);
-        toggleTheme.src=`assets/theme_icon_${theme}.png`
+        toggleTheme.src=`assets/icons/theme_icon_${theme}.png`
     }
 
     let theme = localStorage.getItem('theme');
