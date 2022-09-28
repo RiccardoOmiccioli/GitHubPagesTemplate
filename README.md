@@ -1,5 +1,5 @@
 # GitHubPagesTemplate
-A customized [GitHub Pages](https://pages.github.com/) template for project docuementation based on the [just-the-docs](https://github.com/pmarsceill/just-the-docs) Jekyll theme.
+A customized [GitHub Pages](https://pages.github.com/) template for project documentation based on the [just-the-docs](https://github.com/pmarsceill/just-the-docs) Jekyll theme.
 ## Usage
 1. Create an orphan branch in your repository with the command ``git checkout --orphan BRANCH-NAME``.
 2. Clone and place all the content of this repository (**excluding .git folder**) in the orphan branch of your repository.
