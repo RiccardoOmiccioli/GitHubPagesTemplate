@@ -3,11 +3,12 @@
 
 <script>
     const toggleTheme = document.querySelector('.js-toggle-theme');
-    // window.alert(document.cookie);
+    window.alert("Cookie: " + document.cookie);
     let theme = getCookie("theme");
-        if (theme !== "" && theme === "dark") {
+        window.alert(theme);
+        if (theme != "" && theme == "dark") {
             jtd.setTheme('dark');
-        } else if (theme !== "" && theme === "light"){
+        } else if (theme != "" && theme == "light"){
             jtd.setTheme('light');
         }
     jtd.addEvent(toggleTheme, 'click', function(){
