@@ -3,24 +3,18 @@
 <script>
     const toggleTheme = document.querySelector('.js-toggle-theme');
 
+    function setTheme(theme) {
+        localStorage.setItem("theme", theme);
+        jtd.setTheme(theme);
+        toggleTheme.src=`assets/theme_icon_${theme}.png`
+    }
+
     let theme = localStorage.getItem('theme');
-    if (theme != "" && theme == "dark") {
-        jtd.setTheme('dark');
-        toggleTheme.src="assets/theme_icon_dark.png"
-    } else if (theme != "" && theme == "light"){
-        jtd.setTheme('light');
-        toggleTheme.src="assets/theme_icon_light.png"
+    if (theme != "") {
+        theme == "light" ? () => {setTheme("light")} : () => {setTheme("dark");}
     }
 
     jtd.addEvent(toggleTheme, 'click', function(){
-    if (jtd.getTheme() === 'dark') {
-        localStorage.setItem("theme", "light");
-        jtd.setTheme('light');
-        toggleTheme.src="assets/theme_icon_light.png"
-    } else {
-        localStorage.setItem("theme", "dark");
-        jtd.setTheme('dark');
-        toggleTheme.src="assets/theme_icon_dark.png"
-    }
+        jtd.getTheme() == "light" ? () => {setTheme("dark")} : () => {setTheme("light");}
     });
 </script>
