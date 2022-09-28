@@ -82,5 +82,4 @@ System.out.println("Hello world!");
 |     |**A**|**B**|
 |:---:|:---:|:---:|
 |**1**| a1  | b1  |
-|**2**| a2  | b2  |
-|     | a3  | b3  |
+|**2**| - Item 1 <br /> - Item 2 | b2  |
