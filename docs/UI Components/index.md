@@ -35,11 +35,13 @@ A paragraph
 {: .note }
 A paragraph
 
-{: .important }
+{: .note-title }
+> Title
+>
 > A paragraph
 
-{: .note }
-A paragraph
+{: .important }
+> A paragraph
 
 {: .new }
 A paragraph
@@ -53,6 +55,12 @@ A paragraph
 > {: .warning }
 > A paragraph
 > </div>
+
+## Code
+
+{% highlight java %}
+System.out.println("Hello world!");
+{% endhighlight %}
 
 ## Lists
 
@@ -69,7 +77,9 @@ A paragraph
     1. Item 2.b
 1. Item 4
 
-## Code
-{% highlight java %}
-System.out.println("Hello world!");
-{% endhighlight %}
+## Tables
+
+|     |**A**|**B**|
+|-----|-----|-----|
+|**1**| a1  | b1  |
+|**2**| a2  | b2  |
