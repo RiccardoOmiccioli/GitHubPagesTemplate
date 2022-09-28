@@ -5,9 +5,9 @@
     const toggleTheme = document.querySelector('.js-toggle-theme');
     // window.alert(document.cookie);
     let theme = getCookie("theme");
-        if (theme == "dark") {
+        if (theme !== "" && theme === "dark") {
             jtd.setTheme('dark');
-        } else {
+        } else if (theme !== "" && theme === "light"){
             jtd.setTheme('light');
         }
     jtd.addEvent(toggleTheme, 'click', function(){
