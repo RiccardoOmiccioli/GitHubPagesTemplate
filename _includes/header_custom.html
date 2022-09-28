@@ -11,10 +11,18 @@
 
     let theme = localStorage.getItem('theme');
     if (theme != "") {
-        theme == "light" ? () => {setTheme("light")} : () => {setTheme("dark");}
+        if (theme == "light") {
+            setTheme("light");
+        } else {
+            setTheme("dark");
+        }
     }
 
     jtd.addEvent(toggleTheme, 'click', function(){
-        jtd.getTheme() == "light" ? () => {setTheme("dark")} : () => {setTheme("light");}
+        if (jdt.getTheme() == "light") {
+            setTheme("dark");
+        } else {
+            setTheme("light");
+        }
     });
 </script>
