@@ -2,8 +2,22 @@
 <img src="assets/theme_icon_light.png" class="js-toggle-theme" style="height: 3rem; align-self: center; padding: 1rem; box-sizing: border-box;" alt="Change theme">
 
 <script>
+    function getCookie(cname) {
+        let name = cname + "=";
+        let ca = document.cookie.split(';');
+        for(let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
     const toggleTheme = document.querySelector('.js-toggle-theme');
-    window.alert("Cookie: " + document.cookie);
+    console.log("Cookie: " + document.cookie);
     let theme = getCookie("theme");
         window.alert(theme);
         if (theme != "" && theme == "dark") {
