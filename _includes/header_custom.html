@@ -3,15 +3,15 @@
 
 <script>
     const toggleTheme = document.querySelector('.js-toggle-theme');
-    window.alert(document.cookie);
+    // window.alert(document.cookie);
+    let theme = getCookie("theme");
+        if (theme == "dark") {
+            jtd.setTheme('dark');
+        } else {
+            jtd.setTheme('light');
+        }
     jtd.addEvent(toggleTheme, 'click', function(){
     if (jtd.getTheme() === 'dark') {
-        let theme = getCookie("theme");
-        if (theme != "") {
-            alert("Theme: " + theme);
-        } else {
-            alert("Theme not set");
-        }
         document.cookie = "theme=light";
         jtd.setTheme('light');
         toggleTheme.src="assets/theme_icon_light.png"
