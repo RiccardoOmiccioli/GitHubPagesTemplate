@@ -2,13 +2,16 @@
 <img src="assets/theme_icon_light.png" class="js-toggle-theme" style="height: 3rem; align-self: center; padding: 1rem; box-sizing: border-box;" alt="Change theme">
 
 <script>
+    console.log(document.cookie)
     const toggleTheme = document.querySelector('.js-toggle-theme');
 
     jtd.addEvent(toggleTheme, 'click', function(){
     if (jtd.getTheme() === 'dark') {
+        document.cookie = "theme=light"
         jtd.setTheme('light');
         toggleTheme.src="assets/theme_icon_light.png"
     } else {
+        document.cookie = "theme=dark"
         jtd.setTheme('dark');
         toggleTheme.src="assets/theme_icon_dark.png"
     }
