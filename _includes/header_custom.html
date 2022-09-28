@@ -5,6 +5,8 @@
     const toggleTheme = document.querySelector('.js-toggle-theme');
 
     jtd.addEvent(toggleTheme, 'click', function(){
+        var x = document.cookie;
+        window.alert(x);
     if (jtd.getTheme() === 'dark') {
         jtd.setTheme('light');
         toggleTheme.src="assets/theme_icon_light.png"
