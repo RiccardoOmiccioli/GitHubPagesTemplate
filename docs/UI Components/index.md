@@ -3,7 +3,6 @@ title: UI Components
 has_children: false
 nav_order: 5
 ---
-<base href="https://riccardoomiccioli.github.io/GitHubPagesTemplate/">
 
 ## Images
 ![GitHub Logo](assets/images/GitHub_logo.png)

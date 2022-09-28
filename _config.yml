@@ -6,6 +6,7 @@ search_enabled: true
 callouts_level: quiet
 callouts:
   highlight:
+    title: ""
     color: yellow
   important:
     title: Important
