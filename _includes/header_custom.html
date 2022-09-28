@@ -17,12 +17,16 @@
         return "";
     }
     const toggleTheme = document.querySelector('.js-toggle-theme');
+
     let theme = getCookie("theme");
-        if (theme != "" && theme == "dark") {
-            jtd.setTheme('dark');
-        } else if (theme != "" && theme == "light"){
-            jtd.setTheme('light');
-        }
+    if (theme != "" && theme == "dark") {
+        jtd.setTheme('dark');
+        toggleTheme.src="assets/theme_icon_dark.png"
+    } else if (theme != "" && theme == "light"){
+        jtd.setTheme('light');
+        toggleTheme.src="assets/theme_icon_light.png"
+    }
+
     jtd.addEvent(toggleTheme, 'click', function(){
     if (jtd.getTheme() === 'dark') {
         document.cookie = "theme=light";
