@@ -6,11 +6,9 @@
 
     jtd.addEvent(toggleTheme, 'click', function(){
     if (jtd.getTheme() === 'dark') {
-        document.cookie = "theme=light"
         jtd.setTheme('light');
         toggleTheme.src="assets/theme_icon_light.png"
     } else {
-        document.cookie = "theme=dark"
         jtd.setTheme('dark');
         toggleTheme.src="assets/theme_icon_dark.png"
     }
