@@ -1,5 +1,11 @@
+---
+title: UI Components
+has_children: false
+nav_order: 5
+---
+
 ## Images
-![GitHub Logo](/assets/images/GitHub_logo.png)
+![GitHub Logo](assets/images/GitHub_logo.png)
 
 ## Labels
 
