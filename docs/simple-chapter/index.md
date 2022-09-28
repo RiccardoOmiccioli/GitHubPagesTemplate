@@ -4,5 +4,5 @@ has_children: false
 nav_order: 2
 ---
 
-# Chapter 1
+# Simple chapter
 This is a page without children.
