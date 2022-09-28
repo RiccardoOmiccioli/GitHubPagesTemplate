@@ -3,7 +3,7 @@ A customized [GitHub Pages](https://pages.github.com/) template for project docu
 ## Usage
 1. Create an orphan branch in your repository with the command ``git checkout --orphan BRANCH-NAME``.
 2. Clone and place all the content of this repository (**excluding .git folder**) in the orphan branch of your repository.
-3. Configure the GitHub Pages enviroment of your repository (Settings -> Pages).
+3. Configure the GitHub Pages enviroment of your repository (*Settings > Pages*).
 ## Example
 An example of this template is available [here](https://riccardoomiccioli.github.io/GitHubPagesTemplate/).
 ## License
