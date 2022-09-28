@@ -28,6 +28,7 @@ Deprecated
 {: .label .label-red }
 
 ## Callouts
+
 {: .highlight }
 A paragraph
 
@@ -38,6 +39,9 @@ A paragraph
 > A paragraph
 
 {: .note }
+A paragraph
+
+{: .new }
 A paragraph
 
 {: .warning }
