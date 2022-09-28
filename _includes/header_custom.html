@@ -17,9 +17,7 @@
         return "";
     }
     const toggleTheme = document.querySelector('.js-toggle-theme');
-    console.log("Cookie: " + document.cookie);
     let theme = getCookie("theme");
-        window.alert(theme);
         if (theme != "" && theme == "dark") {
             jtd.setTheme('dark');
         } else if (theme != "" && theme == "light"){
