@@ -1,0 +1,14 @@
+<base href="https://riccardoomiccioli.github.io/GitHubPagesTemplate/">
+<img src="assets/theme_icon.png" class="js-toggle-theme" style="height: -webkit-fill-available; padding: 1rem; box-sizing: border-box;" alt="Change theme"></img>
+
+<script>
+    const toggleDarkMode = document.querySelector('.js-toggle-theme');
+
+    jtd.addEvent(toggleDarkMode, 'click', function(){
+    if (jtd.getTheme() === 'dark') {
+        jtd.setTheme('light');
+    } else {
+        jtd.setTheme('dark');
+    }
+    });
+</script>

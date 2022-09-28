@@ -1,6 +1,6 @@
 ---
-title: Chapter 2 - Child
-parent: Chapter 2
+title: Child
+parent: Chapter with child
 nav_order: 1
 ---
 

@@ -1,9 +1,9 @@
 ---
-title: Project Title
+title: Main page
 has_children: false
 nav_order: 1
 ---
 
-# Project Title
+# Main page title
 
-Project description.
+Main page description.
