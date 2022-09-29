@@ -33,6 +33,6 @@ jobs:
           # URL of the page
           webPageURL: https://riccardoomiccioli.github.io/GitHubPagesTemplate/
           # Path to the resulting PDF file
-          outputFile: /export.pfd
+          outputFile: ./export.pfd
           
 
