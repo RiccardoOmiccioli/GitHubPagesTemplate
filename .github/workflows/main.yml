@@ -33,9 +33,4 @@ jobs:
           # URL of the page
           webPageURL: https://riccardoomiccioli.github.io/GitHubPagesTemplate/
           # Path to the resulting PDF file
-          outputFile: ./export.pfd
-          usePuppeteer: true
-          useScreen: true
-          pdfOptions: '{"format": "Letter", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
-          
-
+          outputFile: /export.pdf         
