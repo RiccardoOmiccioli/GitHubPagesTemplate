@@ -13,6 +13,7 @@ jobs:
         with:
           webPageURL: https://riccardoomiccioli.github.io/GitHubPagesTemplate/
           outputFile: ./export.pdf         
+      - run: ls ./
       - uses: actions/checkout@v2
       - run: ls ./
       - uses: actions/upload-artifact@v3
