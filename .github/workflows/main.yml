@@ -13,7 +13,8 @@ jobs:
         with:
           webPageURL: https://www.noenieto.com/resume/
           outputFile: ./export.pdf         
-      - name: Print result
-        run: echo '##################################################'
-      - name: Print result
-        run: ls -la
+      - uses: actions/checkout@v2
+      - uses: actions/upload-artifact@v3
+        with:
+          name: doc.pdf
+          path: ./export.pdf
