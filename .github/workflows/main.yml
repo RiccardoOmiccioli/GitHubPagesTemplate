@@ -8,11 +8,17 @@ jobs:
   export:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - run: mkdir -p export
+
       - name: Webpage to PDF
-        uses: misaelnieto/web_to_pdf_action@v0.3.1, actions/checkout@v2, actions/upload-artifact@v3
+        uses: misaelnieto/web_to_pdf_action@v0.3.1
         with:
           webPageURL: https://riccardoomiccioli.github.io/GitHubPagesTemplate/
-          outputFile: ./export.pdf         
-          name: export.pdf
-          path: ./export.pdf
+          outputFile: export/doc.pdf
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: doc.pdf
+          path: export/doc.pdf
       
