@@ -12,10 +12,10 @@ jobs:
         uses: misaelnieto/web_to_pdf_action@v0.3.1
         with:
           webPageURL: https://riccardoomiccioli.github.io/GitHubPagesTemplate/
-          outputFile: ./export.pdf         
+          outputFile: /tmp/export.pdf         
       - uses: actions/checkout@v2
-      - run: ls ./
+      - run: ls /tmp/
       - uses: actions/upload-artifact@v3
         with:
           name: export.pdf
-          path: ./export.pdf
+          path: /tmp/export.pdf
