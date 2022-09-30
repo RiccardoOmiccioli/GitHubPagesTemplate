@@ -13,3 +13,7 @@ jobs:
         with:
           webPageURL: https://www.noenieto.com/resume/
           outputFile: ./export.pdf         
+      - name: Print result
+        run: echo '##################################################'
+      - name: Print result
+        run: ls -la
