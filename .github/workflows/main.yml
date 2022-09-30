@@ -9,14 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Webpage to PDF
-        uses: misaelnieto/web_to_pdf_action@v0.3.1
+        uses: misaelnieto/web_to_pdf_action@v0.3.1, actions/checkout@v2, actions/upload-artifact@v3
         with:
           webPageURL: https://riccardoomiccioli.github.io/GitHubPagesTemplate/
           outputFile: ./export.pdf         
-      - run: ls ./
-      - uses: actions/checkout@v2
-      - run: ls ./
-      - uses: actions/upload-artifact@v3
-        with:
           name: export.pdf
           path: ./export.pdf
+      
