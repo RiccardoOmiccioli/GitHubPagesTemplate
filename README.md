@@ -8,5 +8,5 @@ A customized [GitHub Pages](https://pages.github.com/) template for project docu
 An example of this template is available [here](https://riccardoomiccioli.github.io/GitHubPagesTemplate/).
 ## License
 This template is available as open source under the terms of the MIT License.
-
+ 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
