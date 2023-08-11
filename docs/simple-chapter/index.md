@@ -28,10 +28,11 @@ This is a page without children.
 >
 > Answer
 
- Person 1:{: .text-blue-100 }"Question?"\
+Person 1:{: .text-blue-100 } "Question?"\
+ Person 1: {: .text-blue-100 } "Question?"\
 
  Person 2:
-{: .text-green-100 }"Answer"\
+{: .text-green-100 } "Answer"\
 
 Person 1: "Question?"\
 Person 2: "Answer"
